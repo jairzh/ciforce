@@ -1,0 +1,18 @@
+{
+  ".cls": {
+    "xmlType": "ApexClass",
+    "folder": "classes"
+  },
+  ".trigger": {
+    "xmlType": "ApexTrigger",
+    "folder": "triggers"
+  },
+  ".component": {
+    "xmlType": "ApexComponent",
+    "folder": "components"
+  },
+  ".page": {
+    "xmlType": "ApexPage",
+    "folder": "pages"
+  }
+}

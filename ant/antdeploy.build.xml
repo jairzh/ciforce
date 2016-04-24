@@ -1,0 +1,21 @@
+<project name="ciforce Ant Deploy" default="deploy" xmlns:sf="antlib:com.salesforce">
+  <property file="build.properties"/>
+  <property environment="env"/>
+
+  <target name="deploy">
+    <sf:deploy
+      username="{{ user }}"
+      password="{{ pass }}"
+      serverurl="{{ serverurl }}"
+      maxPoll="{{ maxPoll }}"
+      pollWaitMillis="{{ pollWaitMillis }}"
+      zipFile="{{ zipFile }}"
+      checkonly="{{ checkOnly }}"
+      testLevel="{{ testLevel }}"
+      rollbackOnError="{{ rollbackOnError }}">
+      {% for test in tests %}<runTest>{{ test }}</runTest>
+      {% endfor %}
+    </sf:deploy>
+  </target>
+
+</project>

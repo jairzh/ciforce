@@ -1,0 +1,30 @@
+{
+  "name": "ciforce",
+  "version": "0.1.0",
+  "description": "A command-line tool work withs Git to improve Salesforce deployment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "salesforce",
+    "force.com",
+    "sfdc",
+    "ci"
+  ],
+  "author": "Jair Zheng",
+  "license": "MIT",
+  "bin": {
+    "ciforce": "./index.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.4.7",
+    "async": "^2.0.0-rc.3",
+    "commander": "^2.9.0",
+    "fs-extra": "^0.28.0",
+    "git-promise": "^0.3.0",
+    "lodash": "^4.11.1",
+    "nodegit": "^0.12.2",
+    "swig": "^1.4.2"
+  }
+}
