@@ -39,7 +39,7 @@ program
 
 var getTestMethodClasses = function(files) {
   var result = [];
-  var reg = /^\s*@istest\s+|\s+testmethod\s+/img;
+  var reg = /^\s*@istest|\s+testmethod\s+/img;
 
   async.each(files, function(file, callback) {
     if (file.endsWith('.cls')) {
