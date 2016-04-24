@@ -53,6 +53,7 @@ var getTestMethodClasses = function(files) {
       callback();
     }
   }, function(err) {
+    console.log('Run test methods: ' + result);
     createAntBuildXml(result);
     return result;
   });
