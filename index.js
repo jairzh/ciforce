@@ -8,11 +8,13 @@ var metadata = require('./lib/metadata.json');
 var async = require('async');
 var path  = require('path');
 var swig  = require('swig');
+var version = require('./package.json').version;
 //var exec = require('child_process').exec;
 
 var localAnt = path.resolve(__dirname, './ant');
 
 program
+ .version(version)
  .arguments('<commit> <commit>')
  .option('-t, --test', 'Only run test methods')
  .option('-api, --apiversion <API Version>', 'API version')

@@ -1,6 +1,6 @@
 {
   "name": "ciforce",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A command-line tool work withs Git to improve Salesforce deployment",
   "main": "index.js",
   "scripts": {
