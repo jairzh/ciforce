@@ -11,7 +11,7 @@
       pollWaitMillis="{{ pollWaitMillis }}"
       zipFile="{{ zipFile }}"
       checkonly="{{ checkOnly }}"
-      testLevel="{{ testLevel }}"
+      testLevel="{% if tests.length %}RunSpecifiedTests{% else %}NoTestRun{% endif %}"
       rollbackOnError="{{ rollbackOnError }}">
       {% for test in tests %}<runTest>{{ test }}</runTest>
       {% endfor %}
